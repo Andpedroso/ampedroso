@@ -429,6 +429,58 @@ window.addEventListener('keyup', (e) =>
     }
 })
 
+function right()
+{
+    if(keys.a.pressed)
+    {
+        keys.a.pressed = false
+    }
+    else
+    {
+        keys.a.pressed = true
+        lastKey = 'a'
+    }
+}
+
+function up()
+{
+    if(keys.w.pressed)
+    {
+        keys.w.pressed = false
+    }
+    else
+    {
+        keys.w.pressed = true
+        lastKey = 'w'
+    }
+}
+
+function down()
+{
+    if(keys.s.pressed)
+    {
+        keys.s.pressed = false
+    }
+    else
+    {
+        keys.s.pressed = true
+        lastKey = 's'
+    }
+}
+
+function left()
+{
+    if(keys.d.pressed)
+    {
+        keys.d.pressed = false
+    }
+    else
+    {
+        keys.d.pressed = true
+        lastKey = 'd'
+    }
+}
+
 let clicked = false
 
 addEventListener('click', () => 
