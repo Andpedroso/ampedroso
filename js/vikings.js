@@ -29,7 +29,7 @@ const offset = {
 
 collisionsMap.forEach((row, i) => {
     row.forEach((symbol, j) => {
-        if(symbol === 1026)
+        if(symbol === 1217)
         {
             boundaries.push(
                 new Boundary({
@@ -47,7 +47,7 @@ const battleZones = []
 
 battleZonesMap.forEach((row, i) => {
     row.forEach((symbol, j) => {
-        if(symbol === 1025)
+        if(symbol === 3650)
         {
             battleZones.push(
                 new Boundary({
@@ -63,7 +63,7 @@ battleZonesMap.forEach((row, i) => {
 
 const image = new Image()
 
-image.src = 'rpg/img/rpg_map.png'
+image.src = 'rpg/img/rpg_tileset_vikings.png'
 
 const foregroundImage = new Image()
 
@@ -87,8 +87,8 @@ playerRightImage.src = 'rpg/img/playerRight.png'
 
 const player = new Sprite({
     position: {
-        x: canvas.width / 2 - 192 / 4 / 2,
-        y: canvas.height / 2 - 68 / 2
+        x: canvas.width / 2 ,
+        y: canvas.height / 2 - 100
     },
 
     image: playerDownImage,
