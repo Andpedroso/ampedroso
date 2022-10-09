@@ -71,7 +71,7 @@ foregroundImage.src = 'rpg/img/foregroundObjects.png'
 
 const playerDownImage = new Image()
 
-playerDownImage.src = 'rpg/img/playerDown.png'
+playerDownImage.src = 'rpg/img/playerDown2.png'
 
 const playerUpImage = new Image()
 
