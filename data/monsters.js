@@ -11,7 +11,7 @@ const monsters =
             hold: 30
         },
         animate: true,
-        name: 'Emby',
+        name: 'Olaf',
         attacks: [attacks.Tackle, attacks.Fireball]
     },
     Draggle: {
@@ -26,7 +26,7 @@ const monsters =
         },
         animate: true,
         isEnemy: true,
-        name: 'Draggle',
+        name: 'Njal Forces',
         attacks: [attacks.Tackle, attacks.Fireball]
     }
 }

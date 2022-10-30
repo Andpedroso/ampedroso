@@ -213,5 +213,70 @@ function animate()
     c.fillRect(0, 0, canvas.width, canvas.height)
     c.restore()
 }
+function right()
+{
+    if(keys.a.pressed)
+    {
+        keys.a.pressed = false
+    }
+    else
+    {
+        keys.a.pressed = true
+        lastKey = 'a'
+    }
+}
+
+function up()
+{
+    for(let i = 0; i < doors.length; i++)
+            {
+                const door = doors[i]
+                if
+                (
+                    player.hitbox.position.x + player.hitbox.width <= door.position.x + door.width &&
+                    player.hitbox.position.x >= door.position.x &&
+                    player.hitbox.position.y + player.hitbox.height >= door.position.y &&
+                    player.hitbox.position.y <= door.position.y + door.height
+                )
+                {
+                    player.velocity.x = 0
+                    player.velocity.y = 0
+                    player.preventInput = true
+                    player.switchSprite('enterDoor')
+                    door.play()
+                    return
+                }
+            }
+            if(player.velocity.y === 0) {
+                player.velocity.y = -25
+            } 
+}
+
+function down()
+{
+    if(keys.s.pressed)
+    {
+        keys.s.pressed = false
+    }
+    else
+    {
+        keys.s.pressed = true
+        lastKey = 's'
+    }
+}
+
+function left()
+{
+    if(keys.d.pressed)
+    {
+        keys.d.pressed = false
+    }
+    else
+    {
+        keys.d.pressed = true
+        lastKey = 'd'
+    }
+}
+
 levels[level].init()
 animate()
