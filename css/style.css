@@ -10,7 +10,7 @@
 /*GERAIS*/
 section
 {
-    background-color: #383837;
+    background-color: #fbfbf8;
     padding: 20px;
 }
 /*NAVBAR*/
@@ -24,7 +24,7 @@ section
 {
     display: flex;
     justify-content: space-between;
-    background-color: #222016;
+    background-color: #ffffff;
     padding: 20px;
 }
 
@@ -33,15 +33,14 @@ section
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 50px;
-    color: white;
+    margin-left: 160px;
+    color: black;
 }
 
 .nav2 p
 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 30px;
-    padding-top: 18px;
     text-decoration: none;
     text-transform: uppercase;
     color: red;
@@ -224,7 +223,7 @@ section
 .footer
 {
     padding: 20px;
-    background-color: #222016;
+    background-color: #ffffff;
 }
 
 .footer p
@@ -253,7 +252,7 @@ footer nav
     justify-content: space-between;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: black;
     margin: 10px;
 }
 
